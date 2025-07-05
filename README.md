@@ -64,15 +64,6 @@ git+https://github.com/openai/CLIP.git
 
 ---
 
-## ✨ Demo Screenshots
-
-| Upload & Analysis | Annotated Result |
-|----------------|----------------|
-| ![Upload](https://via.placeholder.com/300x180?text=Upload+Image) | ![Result](https://via.placeholder.com/300x180?text=Annotated+Image) |
-
-*(Replace with actual screenshots if you'd like)*
-
----
 
 ## 🤝 Contributing
 
