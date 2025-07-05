@@ -1,47 +1,92 @@
-# AI Pipeline for Image Segmentation and Object Analysis
+# 🔍 Vision AI: Image Segmentation, CLIP Labeling & OCR
 
-## Overview
-This project is designed to create an AI pipeline for image segmentation and object analysis. The pipeline includes the following stages:
+This project is an end-to-end **AI pipeline** for analyzing images. It combines advanced segmentation, object labeling, and text extraction into a single streamlined tool.
 
-1. Image Segmentation: Extracting objects from images.
-2. Object Identification: Identifying and describing the segmented objects.
-3. Text Extraction: Extracting text data from images.
-4. Summarization: Generating summaries based on the extracted data.
-5. The application is built using Python and Streamlit for the UI, with various models and utilities handling the core functionality.
-The application is built using Python and Streamlit for the UI, with various models and utilities handling the core functionality.
+## 🚀 Live App
 
-## Features
-- Segmentation: Automatically segments objects in uploaded images.
-- Identification: Identifies and describes segmented objects using pre-trained models.
-- Text Extraction: Extracts text from images, useful for OCR and document analysis.
-- Summarization: Summarizes the identified objects and extracted text for easier interpretation.
+👉 [Try it here!](https://5tx3ukt4bkktcqnokvuc38.streamlit.app/)
 
-## Setup Instructions
-### Prerequisites
-Ensure you have Python 3.8 or higher installed on your system.
-### Installation
-1. Clone the Repository: git clone https://github.com/rahuljoshi1814/rahul-joshi1814-wasserstoff-AiInternTask.git
-   cd yourrepository
-2. Create a Virtual Environment: python -m venv venv
-   To activate virtual Environment: venv\Scripts\activate
-3. Install Required Packages: pip install -r requirements.txt
+---
 
-## Running the Application
-1. Start the Streamlit App: streamlit run app.py
-2. Upload an Image: Use the sidebar to upload an image.
-3. Run the Pipeline: Click on the buttons in the sidebar to run segmentation, identification, text extraction, and summarization sequentially
+## 💡 Features
 
-## Usage Guidelines
-- Segmentation: The app will segment objects from the uploaded image and save metadata.
-- Identification: The app will identify each segmented object and save the descriptions.
-- Text Extraction: Extract text from the uploaded image.
-- Summarization: Generate summaries based on the identification and text extraction results.
-- Data Mapping: Merges and maps the data for visualization.
-- Visualization: Annotates the original image and displays summary tables.
-- 
-## Troubleshooting
-If you encounter issues during any stage of the pipeline, ensure:
+✅ **Object Segmentation** using Mask R-CNN (pre-trained on COCO dataset)  
+✅ **Object Labeling** using OpenAI CLIP model (zero-shot labeling)  
+✅ **OCR (Text Extraction)** using EasyOCR  
+✅ **Clean, intuitive UI** with Streamlit — just upload and analyze in one click  
+✅ **Downloadable annotated image** with bounding boxes and text overlays
 
-The directories specified in app.py exist and are correctly named.
-All necessary files (e.g., metadata.csv) are generated during the segmentation step.
-For further assistance, refer to the error messages displayed in the Streamlit app.
+---
+
+## ⚙️ How it Works
+
+1️⃣ **Upload an image** (JPG, JPEG, PNG, up to 200MB).  
+2️⃣ The app automatically:
+- Segments objects from the image.
+- Assigns labels to each object using CLIP.
+- Extracts text using OCR.
+3️⃣ **Annotated result image** is shown with overlays.
+4️⃣ **Summaries** of detected objects and text are listed clearly.
+5️⃣ Download your **annotated image** directly from the app.
+
+---
+
+## 🧑‍💻 Tech Stack
+
+- **PyTorch** & **Torchvision** — Mask R-CNN for segmentation
+- **OpenAI CLIP** — object label refinement
+- **EasyOCR** — text extraction
+- **OpenCV & PIL** — image processing
+- **Streamlit** — interactive web application
+
+---
+
+## 📄 Requirements
+
+streamlit
+torch
+torchvision
+opencv-python
+Pillow
+numpy
+easyocr
+git+https://github.com/openai/CLIP.git
+
+
+---
+
+## 💬 Future Enhancements
+
+- Emotion detection module (for faces)
+- Document layout analysis
+- Option to process multiple images in batch mode
+- Flexible custom label lists
+
+---
+
+## ✨ Demo Screenshots
+
+| Upload & Analysis | Annotated Result |
+|----------------|----------------|
+| ![Upload](https://via.placeholder.com/300x180?text=Upload+Image) | ![Result](https://via.placeholder.com/300x180?text=Annotated+Image) |
+
+*(Replace with actual screenshots if you'd like)*
+
+---
+
+## 🤝 Contributing
+
+Pull requests are welcome! Feel free to suggest new ideas or improvements.
+
+---
+
+## ⭐ Acknowledgments
+
+- [PyTorch](https://pytorch.org/)
+- [CLIP by OpenAI](https://github.com/openai/CLIP)
+- [EasyOCR](https://github.com/JaidedAI/EasyOCR)
+- [Streamlit](https://streamlit.io)
+
+### 🚀 **[Try it live now!](https://5tx3ukt4bkktcqnokvuc38.streamlit.app/)**
+
+
